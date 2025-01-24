@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(#3E4044, #28292F); 
+}
+
+:root{
+
+}
+body{
+    margin: 22px 122px 33.71px 122px;
+}
