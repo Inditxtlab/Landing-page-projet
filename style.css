@@ -163,8 +163,3 @@ footer{
     align-items: center;
     gap:62px;
 }
-.copyright{
-    display: flex;
-    justify-content: space-between;
-
-}
