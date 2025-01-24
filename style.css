@@ -1,13 +1,170 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(#3E4044, #28292F); 
-}
-
-:root{
-
+    box-sizing: border-box; 
 }
 body{
     margin: 22px 122px 33.71px 122px;
+    color: #ffffff; 
+    font-family: sans-serif;
+    display: flex;
+    background: linear-gradient(rgb(62, 64, 68), rgb(40, 41, 47));
+}
+h1, h2, h3{
+    color: rgb(137, 255, 253);
+}
+h1{
+    font-size: 161px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 41px;
+}
+p{
+    color: rgb(255, 255, 255); 
+    font-size: 24px;
+}
+header, section{
+    width: 1196px;
+    margin: 59px;
+}
+
+ul{
+    list-style-type: none;
+}
+/*HEADER*/
+header{
+    display: flex;
+    height: 60px;
+    gap: 649px;
+    justify-content: space-around;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 27px;
+}
+nav a{
+    color: white; 
+    text-decoration: none;
+}
+/*PREMIER SECTION*/
+#accueil{
+ display: flex;
+ flex-direction: row;
+ background-image: url(Assets/img-shoe-home.png);
+ background-position: right;
+ background-repeat: no-repeat;
+ height: 601px;
+}
+.content{
+    flex-direction: column;
+    align-self: flex-end;
+    height: 427px;
+    width: 514px;
+}
+.Member{
+    color: #ffffff;
+}
+.Membership{
+    font-weight: lighter;
+
+}
+#bt{
+    height: 50px;
+    width: 172px;
+    color:#ffffff;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+    padding: auto;
+    background-color: #EF32D9;
+}
+.choixshoes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 4px;
+    margin-left:500px;
+
+}
+.shoes{
+    height: 121.29px; 
+    width: 121.29px;
+    border: #ffffff 1px solid;
+    align-content: center;
+}
+.reseaux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+/*DEUXIEME SECTION -FLEX*/
+#meilleursventes{
+    display: flex;
+    gap: 20px;
+}
+.nouv-blocs{
+    display: flex;
+    justify-content: space-between;
+}
+/*TROISIEME SECTION GRID*/
+#Nouvellescollections{
+    display:grid;
+    grid-template-columns: 442px 241px 274px;
+}
+.b1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+}
+.b2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+
+}
+.b3{
+    grid-column: 3/4;
+    grid-row: 1/3;
+
+}
+.b4{
+    grid-column: 2/2;
+    grid-row: 2/2;
+
+}
+.b5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+}
+.b6{
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}
+/*BUTON GRID*/
+.btnvoir{
+    width: 68px;
+    height: 38px;
+    background-color: #28292F;
+    border-radius: 36px;
+    color: #ffffff;
+    font-weight: bold;
+/*FOOTER**/
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:62px;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+
 }
