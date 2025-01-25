@@ -6,13 +6,19 @@
     <title>Nike</title>
     <link rel="shortcut icon" href="Assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
 <!--HEADER-->
         <header>
-            <img class="logo" src="Assets/icons/icon-titre-header.svg" alt="logo" height= "60px" width="60px">
-            <nav>
+            <nav class="menu">
+                <div class="logo">
+                    <img class="logo" src="Assets/icons/icon-titre-header.svg" alt="logo Nike">
+                </div>
+                <div class="enlaces">
                 <ul>
                     <li>
                         <a href="#meilleursventes">Meilleures ventes</a></li>
@@ -20,16 +26,17 @@
                         <a href="#Nouvellescollections">Nouvelles Collections</a>
                     </li>
                     <li>
-                        <img src="Assets/icons/icon-search-nav.png" alt="">
+                        <img src="Assets/icons/icon-search-nav.png" alt="Search">
                     </li>
                     <li>
-                        <img src="Assets/icons/icon-panier-nav (1).png" alt="">
+                        <img src="Assets/icons/icon-panier-nav (1).png" alt="Panier">
                     </li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
         </header>
 <!--ACCUEIL-->
-<section id= "accueil">
+<section id= "accueil" class="section">
     </div>
     <div class="content">
         <h1>NIKE</h1>
@@ -56,66 +63,74 @@
     </div>
 </section>
 <!--MEILLEURS VENTES-->
-<h2>Meilleurs ventes</h2>
-<section id="meilleursventes">
+<hr class="ligne">
+<h2 class="mventestitre">Meilleurs ventes</h2>
+<section id="meilleursventes" class="section">
     <div>
-        <img src="Assets/img-ventes-lakers.png" alt="">
+        <img src="Assets/img-ventes-lakers.png" alt="T-shirt Lakers">
             <div class="nouv-blocs">
             <h3>Le Bron James Lakers</h3>
             <p>90€</p>
             </div>
-            <p>Maillot NBA
-            1 joeur disponible
-            </p>
+            <p><span class="description">Maillot NBA
+            </span><br>
+            <span class="disponibilite">1 joeur disponible
+            </span></p>
     </div>
     <div>
-        <img src="Assets/img-ventes-man.png" alt="">
+        <img src="Assets/img-ventes-man.png" alt="T-shirt homme">
         <div class="nouv-blocs">
             <h3>Nike Drit-FIT Miler</h3>
             <p>30€</p>
         </div>
-        <p>Haut de running
-            1 couleur</p>
+        <p><span class="description">Haut de running</span>
+            <br>
+            <span class="disponibilite">1 couleur</span></p>
     </div>
     <div>
-        <img src="Assets/img-ventes-woman.png" alt="">
+        <img src="Assets/img-ventes-woman.png" alt="Haut de runnign">
         <div class="nouv-blocs">
             <h3>Nike Sportswear</h3>
             <p>40€</p>
         </div>
-        <p>Haut à manches courtes
-            1 couleur</p>
+        <p><span class="description">Haut à manches courtes
+        </span>
+            <br>
+            <span class="disponibilite">1 couleur</span></p>
     </div>
 </section>
 <!--NOUVELLES COLLECTIONS - GRID-->
-<h2>Nouvelles collections</h2>
+<hr class="ligne">
+<h2 class="NcollectionTitre">Nouvelles collections</h2>
 <section id="Nouvellescollections">
     <div class="box b1">
-        <img src="Assets/img-gallerie-pink.png" alt="">
+        <img src="Assets/img-gallerie-pink.png" alt="pink sweater">
         <button class="btnvoir">Voir</button>
     </div>
     <div class="box b2">
-        <img src="Assets/img-gallerie-street.png" alt="">
+        <img src="Assets/img-gallerie-street.png" alt="street wear">
         <button class="btnvoir">Voir</button>
     </div>
     <div class="box b3">
-        <img src="Assets/img-gallerie-group.png" alt="">
+        <img src="Assets/img-gallerie-group.png" alt="trendy">
         <button class="btnvoir">Voir</button>
     </div>
     <div class="box b4">
-        <img src="Assets/img-gallerie-kid.png" alt="">
+        <img src="Assets/img-gallerie-kid.png" alt="vetement pour enfants">
         <button class="btnvoir">Voir</button>
     </div>
     <div class="box b5">
-        <img src="Assets/img-gallerie-jorja.png" alt="">
+        <img src="Assets/img-gallerie-jorja.png" alt="Confy vetement">
         <button class="btnvoir">Voir</button>
     </div>
     <div class="box b6">
-        <img src="Assets/img-gallerie-man.png" alt="">
+        <img src="Assets/img-gallerie-man.png" alt="Vetement pour hommes">
         <button class="btnvoir">Voir</button>
     </div>
 </section>
 <!--FOOTER-->
+<div class=lignefooter>
+</div>
 <footer>
     <div>
         <ul>
@@ -145,16 +160,18 @@
             <li>Développement durable</li>
         </ul>
     </div>
-    <div class="copyright">
-        <p>©2020 Nike. Inc. tous droits réservés</p>
-    </div>
-    <div>
-        <img src="Assets/icons/icon-fb.png" alt="">
-        <img src="Assets/icons/icon-insta.png" alt="">
-        <img src="Assets/icons/icon-tw.png" alt="">
-    </div>
 </footer>
-
+<hr>
+    <div class="copyright">
+        <div>
+        <p>©2020 Nike. Inc. tous droits réservés</p>
+        </div>
+        <div class="reseauxfooter">
+            <img src="Assets/icons/icon-fb.png" alt="">
+            <img src="Assets/icons/icon-insta.png" alt="">
+            <img src="Assets/icons/icon-tw.png" alt="">
+        </div>
+    </div>
     </main>
 </body>
 </html>

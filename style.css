@@ -4,51 +4,62 @@
     box-sizing: border-box; 
 }
 body{
-    margin: 22px 122px 33.71px 122px;
+    margin: auto;
     color: #ffffff; 
-    font-family: sans-serif;
-    display: flex;
+    font-family: "Montserrat", serif;
     background: linear-gradient(rgb(62, 64, 68), rgb(40, 41, 47));
+    max-width: 1196px;
+    
 }
 h1, h2, h3{
     color: rgb(137, 255, 253);
 }
 h1{
     font-size: 161px;
-    font-weight: bolder;
+    font-weight:800;
 }
 h2{
     font-size: 41px;
+    font-weight: 400;
 }
 p{
     color: rgb(255, 255, 255); 
     font-size: 24px;
 }
-header, section{
-    width: 1196px;
-    margin: 59px;
-}
-
 ul{
     list-style-type: none;
 }
 /*HEADER*/
 header{
     display: flex;
-    height: 60px;
-    gap: 649px;
-    justify-content: space-around;
-}
-nav{
-    display:flex;
-    flex-direction: row;
+    height: 70px;
+    padding: 10px;
     justify-content: space-between;
-    gap: 27px;
+
 }
-nav a{
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 649px;
+    padding: 0;
+}
+.menu a{
     color: white; 
     text-decoration: none;
 }
+.enlaces ul{
+    display: inline-flex;
+    gap: 27px;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.logo img{
+      display: block;
+}
+
 /*PREMIER SECTION*/
 #accueil{
  display: flex;
@@ -80,13 +91,15 @@ nav a{
     border: none;
     padding: auto;
     background-color: #EF32D9;
+    margin-top: 30px;
+    font-weight: bold;
 }
 .choixshoes{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
     gap: 4px;
-    margin-left:500px;
+    margin-left:300px;
 
 }
 .shoes{
@@ -98,53 +111,67 @@ nav a{
 .reseaux{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 22px;
 }
 /*DEUXIEME SECTION -FLEX*/
 #meilleursventes{
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    gap:20px;
+    align-items: stretch;
+}
+.ligne{
+    border: #EF32D9 solid 9px;
+    width: 149px;
+    margin-top: 60px;
+}
+.mventestitre, .NcollectionTitre {
+    padding-top: 8px;
+    margin-bottom: 80px;
 }
 .nouv-blocs{
     display: flex;
     justify-content: space-between;
 }
+.description{
+    font-size: 18px;
+    font-weight: 400;
+}
+.disponibilite{
+    font-size: 18px;
+    font-weight: lighter;
+}
 /*TROISIEME SECTION GRID*/
 #Nouvellescollections{
     display:grid;
-    grid-template-columns: 442px 241px 274px;
+    grid-template-areas: 
+    "b1 b2 b3" 
+    "b1 b4 b3" 
+    "b5 b6 b3";
+    max-width: auto;
+}
+.box{
+    position: relative;
 }
 .b1{
-    grid-column: 1/3;
-    grid-row: 1/3;
-
+    grid-area: b1;
 }
 .b2{
-    grid-column: 2/3;
-    grid-row: 1/2;
-
-
+    grid-area: b2;
 }
 .b3{
-    grid-column: 3/4;
-    grid-row: 1/3;
-
+    grid-area: b3;
 }
 .b4{
-    grid-column: 2/2;
-    grid-row: 2/2;
-
+    grid-area: b4;
 }
 .b5{
-    grid-column: 1/2;
-    grid-row: 3/4;
-
+    grid-area: b5;
 }
 .b6{
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-area: b6;
 
 }
 /*BUTON GRID*/
@@ -155,11 +182,39 @@ nav a{
     border-radius: 36px;
     color: #ffffff;
     font-weight: bold;
+    position: absolute; 
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+}
 /*FOOTER**/
+
+.lignefooter{
+    width: 543px;
+    background-color:#EF32D9; 
+    height: 9px;
+    justify-self: center;
+    border: none;
+    margin-top: 100px;
+    margin-bottom: 43px;
 }
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     gap:62px;
+    margin-bottom: 65px;
+}
+.copyright{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+.copyright p{
+    font-size: 12px;
+}
+.reseauxfooter{
+    display: inline-flex;
+    gap: 25px;
 }
