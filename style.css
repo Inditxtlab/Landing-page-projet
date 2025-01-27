@@ -8,6 +8,7 @@ body{
     color: #ffffff; 
     font-family: "Montserrat", serif;
     background: linear-gradient(rgb(62, 64, 68), rgb(40, 41, 47));
+    display: block;
     max-width: 1196px;
     
 }
@@ -80,7 +81,6 @@ header{
 }
 .Membership{
     font-weight: lighter;
-
 }
 #bt{
     height: 50px;
@@ -217,4 +217,97 @@ footer{
 .reseauxfooter{
     display: inline-flex;
     gap: 25px;
+}
+/*DESING RESPONSIVE*/
+@media (max-width:414px){
+    body{
+        flex-direction: column;
+       width: 100%;
+       margin: auto;
+    }
+    header{
+        display: inline-flex;
+        max-width: 386px;
+        max-height: 117px;
+    }
+   .menu{
+        gap: 156px;
+    }
+    .enlaces ul{
+        display:list-item;
+    }
+    #accueil{
+        flex-direction:column;
+        background-size: contain;
+        background-position: bottom;
+        justify-content: center;
+        height: 672px;
+    }
+    h1{
+        font-size: 96px;
+        font-weight:800;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    p{
+        font-size: 18px;
+    }
+    .logo{
+        size: 40px 40px;
+    }
+    .content{
+        align-self: flex-start;
+        text-align: center;
+        width: auto;
+        height: 332px;
+    }
+    #bt{align-items: center;
+
+    }
+    .choixshoes, .shoes{
+        display:none;
+    }
+    .reseaux{
+        display: none;
+    }
+    #meilleursventes{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nouv-blocs{
+        justify-content: space-between;
+        padding: 3px;
+    }
+    #Nouvellescollections{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+    .box{
+        display:flex;
+        flex-direction: column;
+        width: 394px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   .box, .imgresponsive{
+        width: 394px;
+        height: 415px;
+    }
+    .copyright{
+        flex-direction: column;
+    }
+    .b3{
+        object-fit: contain;
+
+    }
 }
