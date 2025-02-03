@@ -21,7 +21,10 @@ h1{
 }
 h2{
     font-size: 41px;
-    font-weight: 400;
+    font-weight: 400 px;
+}
+.h3{
+    font-weight:500 px;
 }
 p{
     color: rgb(255, 255, 255); 
@@ -61,20 +64,20 @@ header{
       display: block;
 }
 
-/*PREMIER SECTION*/
+/*PREMIER SECTION- j'ai chosir d'etablir l'imagen commen un background. C'etait plus facile de le positione de ça façon pour moi*/
 #accueil{
- display: flex;
- flex-direction: row;
- background-image: url(Assets/img-shoe-home.png);
- background-position: right;
- background-repeat: no-repeat;
- height: 601px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(Assets/img-shoe-home.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    max-height: 601px;
 }
 .content{
     flex-direction: column;
     align-self: flex-end;
-    height: 427px;
-    width: 514px;
+    max-height: 427px;
+    max-width: 514px;
 }
 .Member{
     color: #ffffff;
@@ -135,6 +138,10 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.prix{
+    font-size: 24px;
+    font-weight: bold;
+}
 .description{
     font-size: 18px;
     font-weight: 400;
@@ -143,20 +150,28 @@ header{
     font-size: 18px;
     font-weight: lighter;
 }
-/*TROISIEME SECTION GRID*/
+/*TROISIEME SECTION GRID - J'ai essaie plusieurs atribut et ajustements pour le grid. Mais c'est les atribut et grid-auto-column et rows (neanmois surement il y a des autres methodes plus optimises*/
 #Nouvellescollections{
     display:grid;
-    grid-template-areas: 
+    justify-content:center;
+    grid-auto-columns:min-content 242px;
+    grid-auto-rows: max-content;
+    grid-template-areas:
     "b1 b2 b3" 
     "b1 b4 b3" 
     "b5 b6 b3";
-    max-width: auto;
+    justify-items:  flex-end; 
+    column-gap: 7px;
 }
-.box{
+.box, .imgresponsive{
     position: relative;
+}
+.imgresponsive{
+    display:none;
 }
 .b1{
     grid-area: b1;
+
 }
 .b2{
     grid-area: b2;
@@ -169,12 +184,13 @@ header{
 }
 .b5{
     grid-area: b5;
+    justify-self: flex-start;
 }
 .b6{
     grid-area: b6;
 
 }
-/*BUTON GRID*/
+/*BUTON GRID-pour positionne le bouton sur l'imagen j'ai utilise l'atribut position:absolute et à les images j'ai donne le atribut position relative*/
 .btnvoir{
     width: 68px;
     height: 38px;
@@ -213,10 +229,12 @@ footer{
 }
 .copyright p{
     font-size: 12px;
+    padding-top: 3px;
 }
 .reseauxfooter{
     display: inline-flex;
     gap: 25px;
+    padding-top: 3px;
 }
 /*DESING RESPONSIVE*/
 @media (max-width:414px){
@@ -256,6 +274,7 @@ footer{
     }
     .logo{
         size: 40px 40px;
+/*RESPONSIVE: HERO HEADER-FLEX*/
     }
     .content{
         align-self: flex-start;
@@ -272,6 +291,7 @@ footer{
     .reseaux{
         display: none;
     }
+/*RESPONSIVE: SECTION 2-FLEX*/
     #meilleursventes{
         flex-direction: column;
         gap: 20px;
@@ -282,32 +302,28 @@ footer{
         justify-content: space-between;
         padding: 3px;
     }
+/*RESPONSIVE: SECTION 3-GRID pour la section responsive j'ai truve que telecharge les images en la taille donné pour les responsive etait plus facile. Alors, j'ai caché les div avec les images du grid desktop (display:none) pour montre les images responsive. POur le grid desktop j'ai fait le cotraire: j'ai cache les div où etaient les images resposive (Tout grace à les class et l'option de non affichage, en fait) */ 
     #Nouvellescollections{
         display: flex; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap:20px;
+        gap: 20px;
     }
-    .box{
+    .box, .imgresponsive{
         display:flex;
         flex-direction: column;
         width: 394px;
+        max-height: 415px;
+    }
+   .b1, .b3, .b4, .b5, .b6{
+        display:none;
     }
     footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-   .box, .imgresponsive{
-        width: 394px;
-        height: 415px;
-    }
     .copyright{
         flex-direction: column;
-    }
-    .b3{
-        object-fit: contain;
-
-    }
-}
+    }}
