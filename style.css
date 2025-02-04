@@ -10,6 +10,7 @@ body{
     background: linear-gradient(rgb(62, 64, 68), rgb(40, 41, 47));
     display: block;
     max-width: 1196px;
+    width: 90%;
     
 }
 h1, h2, h3{
